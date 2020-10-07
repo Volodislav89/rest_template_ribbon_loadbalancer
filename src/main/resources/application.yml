@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cloud-ribbon-example
+
+server:
+  port: 8888
+
+ping-server:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: https://springcloudconfigclient.herokuapp.com, https://configclientreplica.herokuapp.com
+    ServerListRefreshInterval: 15000
